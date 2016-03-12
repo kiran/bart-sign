@@ -18,7 +18,7 @@ def get_bart_estimates(station='ROCK', direction=None):
 
   data = {
     'cmd': 'etd',
-    'key': key, 
+    'key': key,
     'orig': station,
     'dir': direction,
   }
@@ -47,7 +47,7 @@ def get_bart_estimates(station='ROCK', direction=None):
     print(r.text)
     print(sys.exc_info()[0])
     lines = [['No trains','until next morning']]
-  lines.append(get_time_lines())  
+  lines.append(get_time_lines())
   return lines
 
 def get_time_lines():
